@@ -1,0 +1,30 @@
+{
+  "name": "my_portifolio",
+  "version": "1.0.0",
+  "description": "Portifolio profissional",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolinachm/my_portifolio.git"
+  },
+  "keywords": [
+    "MERN",
+    "MongoDB",
+    "Express",
+    "Nodejs",
+    "React.js",
+    "Fullstack"
+  ],
+  "author": "Carolina Mesquita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carolinachm/my_portifolio/issues"
+  },
+  "homepage": "https://github.com/carolinachm/my_portifolio#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

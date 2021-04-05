@@ -1,0 +1,25 @@
+### Variables
+
+@contentType = application/json
+
+# @name encontrandoTodosOsPortifolios
+GET {{baseUrl}}/portifolio HTTP/1.1
+content-type: {{contentType}}
+###
+
+@portifolioId = {{criandoPortifolio.response.body.$.id}}
+
+# @name encontrandoUmUnicoPortifolio
+GET {{baseUrl}}/portifolio/1 HTTP/1.1
+content-type: {{contentType}}
+###
+# @name criandoPortifolio
+POST {{baseUrl}}/portifolio HTTP/1.1
+content-type: {{contentType}}
+
+{
+    "name": "Inserido via POST 1 ",
+    "message": "success"
+}
+
+###

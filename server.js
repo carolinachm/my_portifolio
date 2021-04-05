@@ -1,6 +1,12 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+
+const api = require('./backend/routes')
 
 const app = express();
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 const PORT = 3080;
 
@@ -9,28 +15,7 @@ app.get('/', (req, res)  => {
         'success': true
     });
 })
-app.get('/portifolio', (req, res) =>{
-    //acessando db
-    const data = [{
-        id: 1,
-        name: "My first project",
-        createAt: '2120-04-04'
-    },
-    {
-        id: 2,
-        name: "My second project",
-        createAt: '2120-04-04'
-    },
-    {
-        id: 3,
-        name: "My other project",
-        createAt: '2120-04-04'
-    }
-]
-    res.json({
-        'success': true,
-        'data': data
-    })
-})
+
+app.use('/api', api);
 
 app.listen(PORT);

@@ -25,6 +25,10 @@ Tabela de conteúdos
    * [Tecnologias](#tecnologias)
 <!--te-->
 
+<h4 align="center"> 
+	🚧  Backend em nodejs  🚀 Em construção...  🚧
+</h4>
+
 ### 🎲 Rodando o Back End (servidor)
 
 ```bash

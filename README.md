@@ -52,7 +52,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
 - [MongoDB](https://reactnative.dev/)
-- [RestApiClient](plugin do vscode)
+- [RestApiClient](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 
 
 ### Utilizando Rest Api Client para executar as requisições

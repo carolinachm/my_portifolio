@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+require('dotenv').config();
 
 const api = require('./backend/routes')
 
@@ -7,8 +8,6 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
-const PORT = 3080;
 
 app.get('/', (req, res)  => {
     res.json({
@@ -18,4 +17,5 @@ app.get('/', (req, res)  => {
 
 app.use('/api', api);
 
+const PORT = process.env.PORT;
 app.listen(PORT);

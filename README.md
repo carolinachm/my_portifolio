@@ -57,3 +57,12 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### Utilizando Rest Api Client para executar as requisições
 Rest Api Client - É uma forma de você trabalhar com requisições sem tem que utilizar o postman ou insomia, você pode criar e executar todas as suas requisições no proprio vscode.
+
+
+### Configurar o dotenv
+
+PORT=
+MONGO_USER=
+MONGO_PASSWORD=
+MONGO_DB=
+MONGO_URL_CONECT=

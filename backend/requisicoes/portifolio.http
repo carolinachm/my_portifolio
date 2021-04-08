@@ -18,8 +18,12 @@ POST {{baseUrl}}/portifolio HTTP/1.1
 content-type: {{contentType}}
 
 {
-    "name": "Inserido via POST 1 ",
+    "title": "Meu primeiro projeto ",
+    "description": "portifolio criado em nodejs e mongodb",
     "message": "success"
 }
 
 ###
+
+
+ 

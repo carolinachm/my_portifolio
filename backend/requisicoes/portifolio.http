@@ -7,10 +7,10 @@ GET {{baseUrl}}/portifolio HTTP/1.1
 content-type: {{contentType}}
 ###
 
-@portifolioId = {{criandoPortifolio.response.body.$.id}}
+@portifolioId = {{criandoPortifolio.response.body.$.slug}}
 
 # @name encontrandoUmUnicoPortifolio
-GET {{baseUrl}}/portifolio/1 HTTP/1.1
+GET {{baseUrl}}/portifolio/meu-primeiro-projeto-4 HTTP/1.1
 content-type: {{contentType}}
 ###
 # @name criandoPortifolio
@@ -18,12 +18,28 @@ POST {{baseUrl}}/portifolio HTTP/1.1
 content-type: {{contentType}}
 
 {
-    "title": "Meu primeiro projeto ",
+    "title": "Meu primeiro projeto 4",
     "description": "portifolio criado em nodejs e mongodb",
     "message": "success"
 }
 
 ###
+PATCH  {{baseUrl}}/portifolio/meu-primeiro-projeto-4 HTTP/1.1
+content-type: {{contentType}}
+
+{
+    "title": "Meu primeiro projeto alterado 00 ",
+    "description": "portifolio criado em nodejs e mongodb",
+    "message": "success"
+}
+
+###
+
+
+DELETE   {{baseUrl}}/portifolio/meu-primeiro-projeto-4 HTTP/1.1
+content-type: {{contentType}}
+
+
 
 
  
